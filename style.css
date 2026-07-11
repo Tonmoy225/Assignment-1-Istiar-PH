@@ -254,13 +254,18 @@ section h2{
     cursor:pointer;
     margin-right:20px;
 }
-
+button:hover{
+    background-color: blue;
+    color: white;
+}
 .get-pro{
     color:white!important;
     background-color:#2563EB!important;
+    
    
 
 }
+
 .pro-ul{
     padding-top:40px!important;
 }
