@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVCONF 2026</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Nav area  -->
+
+    <nav>
+        <section class="nav-bar">
+            <!-- for logo dev -->
+            <div>
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <!-- for center item div  -->
+            <div class="center-items">
+                <ul>
+
+                    <li>Speakers</li>
+                    <li>Schedule</li>
+                    <li>Tracks</li>
+                    <li>Venue</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <!-- for register button div  -->
+            <div class="register">
+                <button class="common-btn">Regiser Now</button>
+            </div>
+        </section>
+    </nav>
+    <!-- banner section  -->
+     <main></main>
+    <section class="banner">
+
+        <div class="ban-img"><img src="./assets/banner.jpg" alt="banner"></div>
+        <div class="overlay"></div>
+
+        <div class="text-area">
+            <div class="img-text">
+                <h1>Code.<em> Content</em>. Create</h1>
+                <p>Join 4,000 engineers,founders,and builders at the premier developer
+                    conference of 2026. Three days of cutting-edge talks, hand-on-workshops,
+                    and meaningful connection.</p>
+
+
+            </div>
+            <div class="img-btn">
+                <button class="common-btn">Regiser Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaker section for meet  -->
+
+    <section>
+
+        <h2> Meet the Speakers</h2>
+
+        <div class="speakers">
+
+
+
+            <div class="speaker-card">
+
+                <img src="./assets/andrej.png" alt="andarej">
+                <h5>AI / ML</h5>
+                <h3>Andrej karpathy</h3>
+                <p>Founder and CEO </p>
+
+            </div>
+            <div class="speaker-card">
+
+                <img src="./assets/demis.png" alt="Dimis">
+                <h5>CLOUDE & DEVOPS</h5>
+                <h3>Demis Hassable</h3>
+                <p>Co-Founder and CEO , Google DeepMind</p>
+
+            </div>
+            <div class="speaker-card">
+
+                <img src="./assets/gary.png" alt="gary">
+                <h5>FRONTEND</h5>
+                <h3>Gary Marcus</h3>
+                <p>Staff Engineer,Vercel </p>
+
+            </div>
+            <div class="speaker-card">
+
+                <img src="./assets/mustafa.png" alt="Mustafa">
+                <h5>SECURITY</h5>
+                <h3>Mustafa Suleyman</h3>
+                <p>CEO of Microsoft AI</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pricing Section for card  -->
+
+    <section class="pricing">
+
+        <h2>Secure Your Spot</h2>
+
+        <p class="subtitle">Early-bird pricing ends August 15,2026</p>
+
+        <div class="price-container">
+
+
+            <!-- card conatainer  -->
+
+
+            <!-- for card 1 div  -->
+
+            <div class="price-card">
+                <h3>Standard</h3>
+                <h1>$399</h1>
+                <p>Per person</p>
+                <br>
+                <hr>
+                <br>
+
+
+                <ul>
+                    <li>Access to all 3 confarence days</li>
+                    <li>48 curated technical talks</li>
+                    <li>2 workshops</li>
+                    <li>Networking lunch & coffee breaks</li>
+                    <li>Confarence swag bag</li>
+                    <li>Digital recodings(30 days) </li>
+                </ul>
+                <button>Get Standard</button>
+            </div>
+
+            <!-- for card 2 div  -->
+
+            <div class="price-card second">
+                <h3>Pro</h3>
+                <h1>$749</h1>
+                <p>Per person</p>
+                <br>
+
+                <hr>
+
+
+                <ul class="pro-ul">
+                    <li>Everything is Standard</li>
+                    <li>Unlimited workshop access</li>
+                    <li>speaker meet & great</li>
+                    <li>VIP networking dinner </li>
+                    <li>Lifetime recording access</li>
+                    <li>1-on-1 mentorship (30 min) </li>
+                </ul>
+                <button class="get-pro">Get Pro</button>
+            </div>
+
+            <!-- for card 3 div team  -->
+
+            <div class="price-card">
+                <h3>Team</h3>
+                <h1>$5,999</h1>
+                <p>Up to 10 people </p>
+                <br>
+                <hr>
+
+
+                <ul>
+                    <li>Everything in pro (10 seat) </li>
+                    <li>Dedicated team louge access</li>
+                    <li>Private workshop booking </li>
+                    <li> Company logo on every page </li>
+                    <li>Recruirment booth (1 Day) </li>
+                    <li> Priority customer support </li>
+                </ul>
+                <button>Contact Us</button>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+     <!-- AI setion for prompt to bring the idea release for this section i Using AI by "Claude ai"  -->
+
+
+  <!-- Don't Miss Out - countdown, seats remaining, reminder signup -->
+
+    <section class="urgency">
+        <div class="urgency-container">
+            <h2 class="urgency-title">Don't Miss Out</h2>
+            <p class="urgency-subtitle">DevConf 2026 starts in</p>
+
+            <div class="countdown" id="countdown">
+                <div class="countdown-box">
+                    <span class="countdown-number" id="cd-days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="countdown-number" id="cd-hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="countdown-number" id="cd-minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="countdown-number" id="cd-seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+
+            <div class="seats-tracker">
+                <div class="seats-tracker-labels">
+                    <span>340 of 400 seats claimed</span>
+                    <span>85%</span>
+                </div>
+                <div class="seats-bar">
+                    <div class="seats-bar-fill" id="seats-fill"></div>
+                </div>
+            </div>
+
+            <form class="reminder-form" id="reminder-form">
+                <input type="email" class="reminder-input" id="reminder-email" placeholder="Enter your email" required>
+                <button type="submit" class="common-btn reminder-btn">Notify Me</button>
+            </form>
+            <p class="reminder-note" id="reminder-note"></p>
+        </div>
+    </section>
+
+
+    <script>
+        // Countdown to DevConf 2026
+        const conferenceDate = new Date('2026-09-15T09:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = conferenceDate - now;
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<p style="color:#94A3B8;">DevConf 2026 is happening now!</p>';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+            document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Animate the seats-claimed bar in on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const fill = document.getElementById('seats-fill');
+                if (fill) fill.style.width = '85%';
+            }, 300);
+        });
+
+        // Reminder signup (front-end only, no backend wired up)
+        const reminderForm = document.getElementById('reminder-form');
+        if (reminderForm) {
+            reminderForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const email = document.getElementById('reminder-email').value;
+                const note = document.getElementById('reminder-note');
+                note.textContent = `Thanks! We'll send updates to ${email}`;
+                this.reset();
+            });
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+    <!-- footer section  -->
+
+    <footer>
+        <section class="footer-container">
+            <div class="left-footer">
+                <p>© 2026 DevConf. All rights reserved</p>
+                <i class="fa-brands fa-facebook"></i>
+            
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+            <div class="right-footer">
+                <div>
+                    <p>Privacy Policy</p>
+                </div>
+                <div>
+                    <p>Terms of Service</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+<!-- Using AI Promt javaScript -->
