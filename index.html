@@ -210,19 +210,19 @@
 
             <div class="countdown" id="countdown">
                 <div class="countdown-box">
-                    <span class="countdown-number" id="cd-days">00</span>
+                    <span class="countdown-number" id="cd-days">29</span>
                     <span class="countdown-label">Days</span>
                 </div>
                 <div class="countdown-box">
-                    <span class="countdown-number" id="cd-hours">00</span>
+                    <span class="countdown-number" id="cd-hours">02</span>
                     <span class="countdown-label">Hours</span>
                 </div>
                 <div class="countdown-box">
-                    <span class="countdown-number" id="cd-minutes">00</span>
+                    <span class="countdown-number" id="cd-minutes">35</span>
                     <span class="countdown-label">Minutes</span>
                 </div>
                 <div class="countdown-box">
-                    <span class="countdown-number" id="cd-seconds">00</span>
+                    <span class="countdown-number" id="cd-seconds">03</span>
                     <span class="countdown-label">Seconds</span>
                 </div>
             </div>
@@ -249,54 +249,7 @@
 
     <!-- Using AI Promt javaScript -->
 
-    <script>
-        // Countdown to DevConf 2026
-        const conferenceDate = new Date('2026-09-15T09:00:00').getTime();
-
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = conferenceDate - now;
-
-            if (distance < 0) {
-                document.getElementById('countdown').innerHTML = '<p style="color:#94A3B8;">DevConf 2026 is happening now!</p>';
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
-            document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
-        }
-
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-
-        // Animate the seats-claimed bar in on load
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const fill = document.getElementById('seats-fill');
-                if (fill) fill.style.width = '85%';
-            }, 300);
-        });
-
-        // Reminder signup (front-end only, no backend wired up)
-        const reminderForm = document.getElementById('reminder-form');
-        if (reminderForm) {
-            reminderForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const email = document.getElementById('reminder-email').value;
-                const note = document.getElementById('reminder-note');
-                note.textContent = `Thanks! We'll send updates to ${email}`;
-                this.reset();
-            });
-        }
-    </script>
-
+   
     <!-- End : Using AI Promt javaScript -->
 
 
