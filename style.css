@@ -299,6 +299,13 @@ button:hover{
     gap: 20px;
     
 }
+.icon-go{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor:default;
+    
+}
 
 
 /* this section only use for Ai prompt for given Instruction marks:  */
